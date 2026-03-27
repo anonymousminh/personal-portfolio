@@ -12,7 +12,7 @@ export default function Achievements() {
       title: "AI AGENT HACKATHON",
       desc: "Built an AI agent that can detect Vercel deployment failures and automatically fix them and generate a PR waiting for you to review",
       year: "2026",
-      image: "/minute-0.png"
+      image: "/minute-0.jpg"
     },
   ];
 
