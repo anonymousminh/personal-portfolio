@@ -6,21 +6,24 @@ const projects = [
     title: "NovaTempo",
     stack: "Python, FastAPI, Node.js, Javascript, Web Audio API, Strands Agents, Google Calendar API",
     desc: "A voice-first calendar assistant using Amazon Nova Sonic to help users manage their schedules and tasks.",
-    stage: "STAGE 1"
+    stage: "STAGE 1",
+    demoUrl: "https://nova-tempo.vercel.app/"
   },
   {
     id: 2,
     title: "Min0",
     stack: "Python, FastAPI, Cerebras, Github API, ChromaDB, Slack API",
     desc: "An AI agent that detects deployment failures, retrieves historical fixes, and generates pull requests; successfully diagnosed and resolved a live Vercel deployment failure",
-    stage: "STAGE 2"
+    stage: "STAGE 2",
+    demoUrl: ""
   },
   {
     id: 3,
     title: "LectureLens",
     stack: "Typescript, HTML/CSS, Cloudflare Workers, D1, Durable Objects, Workers AI, OAuth 2.0",
     desc: "A lecture assistant application that allows users to upload lecture materials and receive AI-generated summaries and notes.",
-    stage: "STAGE 3"
+    stage: "STAGE 3",
+    demoUrl: "https://lectrurelens.pages.dev"
   }
 ];
 
@@ -44,9 +47,14 @@ export default function Projects() {
 
             <p className="text-[10px] leading-6 mb-8 flex-1">{proj.desc}</p>
 
-            <button className="pixel-button w-full text-[10px]">
+            <a
+              href={proj.demoUrl || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pixel-button w-full text-[10px] block text-center"
+            >
               START &gt;
-            </button>
+            </a>
 
             {/* The second project hides the key */}
             {index === 1 && (
