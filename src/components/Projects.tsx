@@ -15,7 +15,7 @@ const projects = [
     stack: "Python, FastAPI, Cerebras, Github API, ChromaDB, Slack API",
     desc: "An AI agent that detects deployment failures, retrieves historical fixes, and generates pull requests; successfully diagnosed and resolved a live Vercel deployment failure",
     stage: "STAGE 2",
-    demoUrl: ""
+    demoUrl: "https://drive.google.com/file/d/1MX9aOXHwPIX-_HD4yQHHkymvmoXnWLxF/view?usp=sharing"
   },
   {
     id: 3,
